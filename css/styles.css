@@ -199,8 +199,11 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  animation-name:slip;
 }
-
+@keyframe slip {
+  0% { transform:translate3d(0,500px,0); }
+  100% { transform: translate3d(0,0,0); }
 svg {
   overflow: hidden;
   vertical-align: middle;
